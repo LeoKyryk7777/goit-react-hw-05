@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { searchMovies } from "../../services/api";
+import { searchTrendingMovies } from "../../services/api";
 import css from "./HomePage.module.css";
 import MovieList from "../../components/MovieList/MovieList";
 
@@ -8,7 +8,7 @@ export default function HomePage() {
   useEffect(() => {
     const getData = async () => {
       try {
-        const movies = await searchMovies();
+        const movies = await searchTrendingMovies();
         setMovies(movies);
       } catch (error) {
         console.log(error);
@@ -19,6 +19,7 @@ export default function HomePage() {
 
   return (
     <div className={css.home}>
+      <h1 className={css.title}>Trending today</h1>
       <MovieList data={movies} />
     </div>
   );

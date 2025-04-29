@@ -1,21 +1,25 @@
 .header {
+  background-color: #1976d2;
+  padding: 16px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 8px 0;
-  margin-bottom: 16px;
-  border-bottom: 1px solid black;
+  justify-content: center;
+  gap: 40px;
 }
+
 .link {
-  padding: 8px 16px;
-  border-radius: 4px;
+  color: white;
   text-decoration: none;
-  color: black;
-  font-weight: 500;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .active {
-  color: white;
-  background-color: orangered;
+  background-color: white;
+  color: #1976d2;
 }
