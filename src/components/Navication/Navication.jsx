@@ -1,12 +1,12 @@
 import { NavLink } from "react-router-dom";
-import css from "./Novication.module.css";
+import css from "./Navication.module.css";
 import clsx from "clsx";
 
 const buildLinkClass = ({ isActive }) => {
   return clsx(css.link, isActive && css.active);
 };
 
-export default function Novication() {
+export default function Navication() {
   return (
     <header className={css.header}>
       <nav>

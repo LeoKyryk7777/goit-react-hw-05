@@ -12,7 +12,7 @@ form {
   flex-wrap: wrap;
 }
 
-input[name="query"] {
+input {
   padding: 10px 15px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -21,12 +21,12 @@ input[name="query"] {
   transition: border 0.3s ease;
 }
 
-input[name="query"]:focus {
+input:focus {
   border-color: #007bff;
   outline: none;
 }
 
-button[type="submit"] {
+button {
   padding: 10px 20px;
   background-color: #007bff;
   color: white;
@@ -37,6 +37,6 @@ button[type="submit"] {
   transition: background-color 0.3s ease;
 }
 
-button[type="submit"]:hover {
+button:hover {
   background-color: #0056b3;
 }
