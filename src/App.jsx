@@ -1,7 +1,7 @@
 import css from "./index.module.css";
 import { Routes, Route } from "react-router-dom";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
-import Navication from "./components/Navication/Navication";
+import Navigation from "./components/Navigation/Navigation";
 import { lazy, Suspense } from "react";
 
 const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
@@ -17,7 +17,7 @@ const MoviesPage = lazy(() => import("./pages/MoviesPage/MoviesPage"));
 export default function App() {
   return (
     <div className={css.pageContainer}>
-      <Navication />
+      <Navigation />
 
       <Suspense fallback={<div>Loading page...</div>}>
         <Routes>
